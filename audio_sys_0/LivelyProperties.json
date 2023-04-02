@@ -1,0 +1,12 @@
+{
+  "lineColor": {
+    "text": "Lines",
+    "type": "color",
+    "value": "#FF0000"
+  },
+  "square": {
+    "type": "checkbox",
+    "value": true,
+    "text": "Square"
+  }
+}

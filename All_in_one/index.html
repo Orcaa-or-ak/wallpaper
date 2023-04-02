@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Lines</title>
+		<style media="screen">
+			body{
+				margin:0;
+				overflow:visible;
+			}
+		</style>
+
+		<title>three.js webgl - glTF loader</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+		<link rel="stylesheet" href="style/main.css">
+		<link rel="stylesheet" href="css/normalize.min.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body id="body">
+		
+		<style>
+			body {
+			  background-image: url('bgg.png');
+			  background-repeat: no-repeat;
+			  background-attachment: fixed;
+			  background-size: cover;
+			}
+			</style>
+		  <canvas id="canvas" width="300" height="300"></canvas>
+		  
+		
+		<div style="z-index: 100; position: absolute; width: 20vw; height: 20vh; left: 20%; top: 20%;" >
+			<canvas id="cpuChart" />				
+		</div>
+
+		<div style="z-index: 100; position: absolute; width: 20vw; height: 20vh; left: 58%; top: 20%;">
+			<canvas id="gpuChart" />
+		</div>
+
+		<div style="z-index: 100; position: absolute; width: 20vw; height: 20vh; left: 40%; top: 40.5%;">
+			<canvas id="ramChart" />
+		</div>
+
+		<!-- partial:index.partial.html -->
+		<div class="p-summary">
+  			<div id="clock"> 00:00 </div>
+  			<div id="day">Saturday</div>
+  			<div id="date">Jun 13 20</div>
+		</div>
+		<canvas id="canvas-webgl"></canvas>
+
+		<!-- New version of chart.js has issue with chartjs-plugin-streaming.js, using this: https://cdn.jsdelivr.net/npm/chart.js@2.8.0 -->
+		<script src="js/moment.min.js"></script>
+		<script src="js/chart.js"></script>
+		<script src="js/chartjs-plugin-streaming.min.js"></script>
+		<script src="script.js"></script>
+		
+	
+		<script src="js/three.min.js"></script>
+		
+		<script src="js/jquery.min.js"></script>
+		<script src="js/script.js"></script>
+		<script src="viz.js"></script>
+	</body>
+</html>

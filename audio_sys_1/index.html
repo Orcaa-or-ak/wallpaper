@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>three.js webgl - glTF loader</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+		<link rel="stylesheet" href="style/main.css">
+
+        <title>Document</title>
+        <style>
+            body {
+                background-color: black;
+                margin:0;
+                padding:0;
+                overflow:hidden;
+            }
+
+            #audioData {
+                position: absolute;
+                color: white;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-size: 50px;
+                height: auto;
+                width: auto;
+                white-space: nowrap;
+            }
+
+            #canvas {
+                position: absolute;
+            }
+
+            #backgroundImg {
+                object-fit: cover;
+                margin: 0;
+                padding: 0;
+                width: 100vw;
+                height: 100vh;
+                display: none;
+            }
+        </style>
+	</head>
+
+	<body id="body">
+
+		<div class="bg"></div>
+ 
+		<div style="z-index: 100; position: absolute; width: 20vw; height: 20vh; left: 25%; top: 25%;" >
+			<canvas id="cpuChart" />				
+		</div>
+
+		<div style="z-index: 100; position: absolute; width: 20vw; height: 20vh; left: 55%; top: 25%;">
+			<canvas id="gpuChart" />
+		</div>
+
+		<div style="z-index: 100; position: absolute; width: 20vw; height: 20vh; left: 40%; top: 52.5%;">
+			<canvas id="ramChart" />
+		</div>
+
+		<!-- New version of chart.js has issue with chartjs-plugin-streaming.js, using this: https://cdn.jsdelivr.net/npm/chart.js@2.8.0 -->
+		<script src="js/moment.min.js"></script>
+		<script src="js/chart.js"></script>
+		<script src="js/chartjs-plugin-streaming.min.js"></script>
+		<script src="script.js"></script>
+
+        <div id="console"></div>
+        <img id="backgroundImg" src=""></img>
+        <canvas id="canvas" width="1500" height="550"></canvas>
+        <script src="js/script.js"></script>
+        <div id="audioData"></div>
+	</body>
+</html>

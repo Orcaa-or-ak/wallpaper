@@ -1,0 +1,17 @@
+{
+  "AppVersion": "1.0.0.0",
+  "Title": "All",
+  "Thumbnail": "prxfst5u.jpg",
+  "Preview": "licvqzja.gif",
+  "Desc": "Lively hardware API showcase.",
+  "Author": "rocksdanister",
+  "License": "See license.txt",
+  "Contact": "https://github.com/rocksdanister/system-stats-wallpaper",
+  "Type": 2,
+  "FileName": "index.html",
+  "Arguments": "--system-information",
+  "IsAbsolutePath": false,
+  "Id": null,
+  "Tags": null,
+  "Version": 0
+}
